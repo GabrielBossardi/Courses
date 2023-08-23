@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "apache-aiflow-complete-hands-on"
+version = "0.1.0"
+description = ""
+authors = ["Gabriel Bossardi <contato@gabrielbossardi.com.br>"]
+readme = "README.md"
+packages = [{include = "apache_aiflow_complete_hands_on"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+apache-airflow = "2.4.2"
+apache-airflow-providers-amazon = "^8.5.1"
+apache-airflow-providers-postgres = "^5.6.0"
+apache-airflow-providers-http = "^4.5.0"
+pandas = "^2.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
