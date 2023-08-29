@@ -6,7 +6,7 @@ from subdags.subdag_downloads import subdag_downloads
 from datetime import datetime
 
 with DAG(
-    dag_id='group_dag',
+    dag_id='supergroup_dag',
     start_date=datetime(2022, 1, 1),
     schedule_interval='@daily',
     catchup=False) as dag:
