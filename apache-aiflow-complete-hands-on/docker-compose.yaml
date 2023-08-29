@@ -131,7 +131,7 @@ services:
 
   airflow-worker:
     <<: *airflow-common
-    command: celery worker -q high_cpu
+    command: celery worker
     healthcheck:
       test:
         - "CMD-SHELL"
